@@ -21,8 +21,6 @@ if __name__ == "__main__":
         config = yaml.safe_load(f)
 
     model_name = opt.model_name
-    prop_train_subjects = opt.prop_subj
-    aug = bool(opt.aug)
 
     lr_rate = float(config['lr_rate'])
     data_path = config['path']
@@ -61,7 +59,7 @@ if __name__ == "__main__":
             slices = subj_dict[subj]
 
             # Load data
-            subj_dataset = brats_dataset_subj(data_path, 'train', img_size, slices)  # Change rand_subj to True
+            subj_dataset = brats_dataset_subj(data_path, 'test', img_size, slices)  # Change rand_subj to True
             subj_loader = data.DataLoader(subj_dataset, batch_size=batch_size, shuffle=False, num_workers=1)
             #print('Subject ', subj, ' Number of Slices: ', subj_dataset.size)
 

@@ -1,0 +1,28 @@
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 1331 Subjects: 10
+['Brats17_CBICA_AWG_1_t2_unbiased.nii.gz', 'Brats17_TCIA_605_1_t2_unbiased.nii.gz', 'Brats17_TCIA_299_1_t2_unbiased.nii.gz', 'Brats17_CBICA_ANZ_1_t2_unbiased.nii.gz', 'Brats17_TCIA_247_1_t2_unbiased.nii.gz', 'Brats17_TCIA_290_1_t2_unbiased.nii.gz', 'Brats17_CBICA_ABB_1_t2_unbiased.nii.gz', 'Brats17_TCIA_203_1_t2_unbiased.nii.gz', 'Brats17_TCIA_226_1_t2_unbiased.nii.gz', 'Brats17_2013_4_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20

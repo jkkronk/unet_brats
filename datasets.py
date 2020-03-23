@@ -77,11 +77,6 @@ class brats_dataset(Dataset):
             self.seg_img[idx] = self.data['Seg'][id_slice].reshape(200,200)
             self.mask_img[idx] = self.data['Mask'][id_slice].reshape(200,200)
 
-            x = torch.Tensor(2, 3).to('cuda:0')  # An un-initialized Tensor object. x holds garbage data.
-            y = torch.rand(2, 3).to('cuda:0')    # Initialize with random values
-
-            #   Operations
-            z2 = torch.add(x, y)
 
     def transform(self, img, seg, mask):
         # Function for data augmentation
@@ -105,9 +100,9 @@ class brats_dataset(Dataset):
                 iaa.Affine(
                     scale={"x": (0.9, 1.1), "y": (0.9, 1.1)},
                     translate_percent={"x": (0, 0), "y": (0, 0)},
-                    rotate=(-15, 15),
+                    rotate=(-10, 10),
                     shear=(0, 0)), # Scaling, rotating
-                iaa.ElasticTransformation(alpha=10, sigma=10) # Elastic
+                iaa.ElasticTransformation(alpha=5, sigma=5) # Elastic
                 ], random_order=True)
 
             seq_img = iaa.Sequential([

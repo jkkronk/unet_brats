@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "evaluate.py", line 24, in <module>
+    prop_train_subjects = opt.prop_subj
+AttributeError: 'Namespace' object has no attribute 'prop_subj'
