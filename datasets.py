@@ -69,18 +69,18 @@ class brats_dataset(Dataset):
         # Init data arrays
         self.data_img = np.zeros((self.size, 200, 200))
         self.seg_img = np.zeros((self.size, 200, 200), dtype='bool')
-        self.mask_img = np.zeros((self.size, 200, 200) ,dtype='bool')
+        #self.mask_img = np.zeros((self.size, 200, 200) ,dtype='bool')
 
         # Iterate slices and place in arrays
         for idx, id_slice in enumerate(subj_slices):
             self.data_img[idx] = self.data['Scan'][id_slice].reshape(200,200)
             self.seg_img[idx] = self.data['Seg'][id_slice].reshape(200,200)
-            self.mask_img[idx] = self.data['Mask'][id_slice].reshape(200,200)
+            #self.mask_img[idx] = self.data['Mask'][id_slice].reshape(200,200)
 
 
-    def transform(self, img, seg, mask):
+    def transform(self, img, seg): #, mask):
         # Function for data augmentation
-        # 1) Affine Augmentations: Rotation (-15 to +15 degrees), Scaling, Flipping.
+        # 1) Affine Augmentations: Rotation (-10 to +10 degrees), Scaling, Flipping.
         # 2) Elastic deformations
         # 3) Intensity augmentations
 
@@ -89,7 +89,7 @@ class brats_dataset(Dataset):
         # Needed for iaa
         img = (img*255).astype('uint8')
         seg = (seg).astype('uint8')
-        mask = (mask*255).astype('uint8')
+        #mask = (mask*255).astype('uint8')
 
         if self.aug: # Augmentation only performed on train set
             img = np.expand_dims(img, axis=0)
@@ -122,29 +122,32 @@ class brats_dataset(Dataset):
         # To PIL for Flip and ToTensor
         img_PIL = Image.fromarray(img)
         seg_PIL = Image.fromarray(seg*255)
-        mask_PIL = Image.fromarray(mask)
+        #mask_PIL = Image.fromarray(mask)
 
         flip_tensor_trans = transforms.Compose([
             transforms.RandomVerticalFlip(p=1), # Flipped due to camcan
             transforms.ToTensor()
         ])
 
-        return flip_tensor_trans(img_PIL), flip_tensor_trans(seg_PIL), flip_tensor_trans(mask_PIL)
+        return flip_tensor_trans(img_PIL), flip_tensor_trans(seg_PIL)#, flip_tensor_trans(mask_PIL)
 
 
     def __getitem__(self, index):
         # Resize Images to network
         img_data = resize(self.data_img[index], (self.img_size, self.img_size))
         seg_data = resize(self.seg_img[index], (self.img_size, self.img_size))
-        mask_data = resize(self.mask_img[index], (self.img_size, self.img_size))
+        #mask_data = resize(self.mask_img[index], (self.img_size, self.img_size))
 
         # Set all segmented elements to 1
         seg_data[seg_data > 0] = 1
-        mask_data[mask_data > 0] = 1
+        #mask_data[mask_data > 0] = 1
 
-        img_trans, seg_trans, mask_trans = self.transform(img_data, seg_data, mask_data)
+        img_trans, seg_trans = self.transform(img_data, seg_data)
 
-        return img_trans, seg_trans, mask_trans
+        mask = torch.zeros(img_trans.size())
+        mask[img_trans > 0] = 1
+
+        return img_trans, seg_trans, mask
 
     def __len__(self):
         return self.size
@@ -182,15 +185,13 @@ class brats_dataset_subj(Dataset):
         # Init data arrays
         self.data_img = np.zeros((self.size, 200, 200))
         self.seg_img = np.zeros((self.size, 200, 200), dtype='bool')
-        self.mask_img = np.zeros((self.size, 200, 200), dtype='bool')
 
         # Iterate slices and place in arrays
         for idx, id_slice in enumerate(slices):
             self.data_img[idx] = self.data['Scan'][id_slice].reshape(200, 200)
             self.seg_img[idx] = self.data['Seg'][id_slice].reshape(200, 200)
-            self.mask_img[idx] = self.data['Mask'][id_slice].reshape(200, 200)
 
-    def transform(self, img, seg, mask):
+    def transform(self, img, seg):
         # Function for data augmentation
         # 1) Affine Augmentations: Rotation (-15 to +15 degrees), Scaling, Flipping.
         # 2) Elastic deformations
@@ -201,7 +202,6 @@ class brats_dataset_subj(Dataset):
         # Needed for iaa
         img = (img * 255).astype('uint8')
         seg = (seg).astype('uint8')
-        mask = (mask * 255).astype('uint8')
 
         if self.aug:  # Augmentation only performed on train set
             img = np.expand_dims(img, axis=0)
@@ -234,28 +234,29 @@ class brats_dataset_subj(Dataset):
         # To PIL for Flip and ToTensor
         img_PIL = Image.fromarray(img)
         seg_PIL = Image.fromarray(seg * 255)
-        mask_PIL = Image.fromarray(mask)
 
         flip_tensor_trans = transforms.Compose([
             transforms.RandomVerticalFlip(p=1),  # Flipped due to camcan
             transforms.ToTensor()
         ])
 
-        return flip_tensor_trans(img_PIL), flip_tensor_trans(seg_PIL), flip_tensor_trans(mask_PIL)
+        return flip_tensor_trans(img_PIL), flip_tensor_trans(seg_PIL)
 
     def __getitem__(self, index):
         # Resize Images to network
         img_data = resize(self.data_img[index], (self.img_size, self.img_size))
         seg_data = resize(self.seg_img[index], (self.img_size, self.img_size))
-        mask_data = resize(self.mask_img[index], (self.img_size, self.img_size))
+        #mask_data = resize(self.mask_img[index], (self.img_size, self.img_size))
 
         # Set all segmented elements to 1
         seg_data[seg_data > 0] = 1
-        mask_data[mask_data > 0] = 1
 
-        img_trans, seg_trans, mask_trans = self.transform(img_data, seg_data, mask_data)
+        img_trans, seg_trans = self.transform(img_data, seg_data)
 
-        return img_trans, seg_trans, mask_trans
+        mask = torch.zeros(img_trans.size())
+        mask[img_trans > 0] = 1
+
+        return img_trans, seg_trans, mask
 
     def __len__(self):
         return self.size

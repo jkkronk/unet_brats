@@ -1,0 +1,27 @@
+Using device: cuda:0
+Loading test set
+Traceback (most recent call last):
+  File "evaluate.py", line 67, in <module>
+    for batch_idx, (scan, seg, mask) in enumerate(subj_loader): #tqdm(enumerate(test_data_loader), total=len(test_data_loader), desc='Evaluate'):
+  File "/scratch_net/biwidl214/jonatank/anaconda3/envs/JKMT/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 345, in __next__
+    data = self._next_data()
+  File "/scratch_net/biwidl214/jonatank/anaconda3/envs/JKMT/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 856, in _next_data
+    return self._process_data(data)
+  File "/scratch_net/biwidl214/jonatank/anaconda3/envs/JKMT/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 881, in _process_data
+    data.reraise()
+  File "/scratch_net/biwidl214/jonatank/anaconda3/envs/JKMT/lib/python3.7/site-packages/torch/_utils.py", line 394, in reraise
+    raise self.exc_type(msg)
+NameError: Caught NameError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/scratch_net/biwidl214/jonatank/anaconda3/envs/JKMT/lib/python3.7/site-packages/torch/utils/data/_utils/worker.py", line 178, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/scratch_net/biwidl214/jonatank/anaconda3/envs/JKMT/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/scratch_net/biwidl214/jonatank/anaconda3/envs/JKMT/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/scratch_net/biwidl214/jonatank/code_home/unet_seg/datasets.py", line 259, in __getitem__
+    img_trans, seg_trans = self.transform(img_data, seg_data)#, mask_data)
+  File "/scratch_net/biwidl214/jonatank/code_home/unet_seg/datasets.py", line 247, in transform
+    return flip_tensor_trans(img_PIL), flip_tensor_trans(seg_PIL), flip_tensor_trans(mask_PIL)
+NameError: name 'mask_PIL' is not defined
+

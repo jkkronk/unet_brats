@@ -1,0 +1,580 @@
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 837 Subjects: 6
+['Brats17_TCIA_393_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AOD_1_t2_unbiased.nii.gz', 'Brats17_TCIA_469_1_t2_unbiased.nii.gz', 'Brats17_TCIA_208_1_t2_unbiased.nii.gz', 'Brats17_2013_9_1_t2_unbiased.nii.gz', 'Brats17_TCIA_408_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 817 Subjects: 6
+['Brats17_TCIA_241_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AOD_1_t2_unbiased.nii.gz', 'Brats17_TCIA_282_1_t2_unbiased.nii.gz', 'Brats17_2013_17_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AQU_1_t2_unbiased.nii.gz', 'Brats17_CBICA_ATX_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 777 Subjects: 6
+['Brats17_TCIA_278_1_t2_unbiased.nii.gz', 'Brats17_TCIA_419_1_t2_unbiased.nii.gz', 'Brats17_TCIA_351_1_t2_unbiased.nii.gz', 'Brats17_TCIA_283_1_t2_unbiased.nii.gz', 'Brats17_TCIA_420_1_t2_unbiased.nii.gz', 'Brats17_TCIA_290_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 797 Subjects: 6
+['Brats17_TCIA_186_1_t2_unbiased.nii.gz', 'Brats17_TCIA_105_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AQT_1_t2_unbiased.nii.gz', 'Brats17_TCIA_171_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AQP_1_t2_unbiased.nii.gz', 'Brats17_TCIA_479_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 826 Subjects: 6
+['Brats17_TCIA_633_1_t2_unbiased.nii.gz', 'Brats17_CBICA_ATD_1_t2_unbiased.nii.gz', 'Brats17_TCIA_442_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AQY_1_t2_unbiased.nii.gz', 'Brats17_CBICA_ASO_1_t2_unbiased.nii.gz', 'Brats17_TCIA_109_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 820 Subjects: 6
+['Brats17_TCIA_632_1_t2_unbiased.nii.gz', 'Brats17_TCIA_312_1_t2_unbiased.nii.gz', 'Brats17_TCIA_221_1_t2_unbiased.nii.gz', 'Brats17_TCIA_135_1_t2_unbiased.nii.gz', 'Brats17_TCIA_314_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AAG_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 806 Subjects: 6
+['Brats17_CBICA_AWG_1_t2_unbiased.nii.gz', 'Brats17_2013_11_1_t2_unbiased.nii.gz', 'Brats17_TCIA_282_1_t2_unbiased.nii.gz', 'Brats17_TCIA_378_1_t2_unbiased.nii.gz', 'Brats17_TCIA_296_1_t2_unbiased.nii.gz', 'Brats17_TCIA_309_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 803 Subjects: 6
+['Brats17_TCIA_462_1_t2_unbiased.nii.gz', 'Brats17_TCIA_211_1_t2_unbiased.nii.gz', 'Brats17_TCIA_498_1_t2_unbiased.nii.gz', 'Brats17_TCIA_620_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AAB_1_t2_unbiased.nii.gz', 'Brats17_CBICA_ASH_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 830 Subjects: 6
+['Brats17_CBICA_AXL_1_t2_unbiased.nii.gz', 'Brats17_CBICA_ALN_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AWG_1_t2_unbiased.nii.gz', 'Brats17_CBICA_ATP_1_t2_unbiased.nii.gz', 'Brats17_TCIA_654_1_t2_unbiased.nii.gz', 'Brats17_CBICA_APZ_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
+Using device: cuda:0
+Loading train set
+TRAIN loaded: Slices: 785 Subjects: 6
+['Brats17_TCIA_629_1_t2_unbiased.nii.gz', 'Brats17_TCIA_393_1_t2_unbiased.nii.gz', 'Brats17_TCIA_121_1_t2_unbiased.nii.gz', 'Brats17_CBICA_AQY_1_t2_unbiased.nii.gz', 'Brats17_TCIA_478_1_t2_unbiased.nii.gz', 'Brats17_TCIA_473_1_t2_unbiased.nii.gz']
+Loading validation set
+VALIDATION loaded: Slices: 4654 Subjects: 35
+Start training:
+Epoch: 0
+Epoch: 1
+Epoch: 2
+Epoch: 3
+Epoch: 4
+Epoch: 5
+Epoch: 6
+Epoch: 7
+Epoch: 8
+Epoch: 9
+Epoch: 10
+Epoch: 11
+Epoch: 12
+Epoch: 13
+Epoch: 14
+Epoch: 15
+Epoch: 16
+Epoch: 17
+Epoch: 18
+Epoch: 19
+Epoch: 20
+Epoch: 21
+Epoch: 22
+Epoch: 23
+Epoch: 24
+Epoch: 25
+Epoch: 26
+Epoch: 27
+Epoch: 28
+Epoch: 29
+Epoch: 30
+Epoch: 31
+Epoch: 32
+Epoch: 33
+Epoch: 34
+Epoch: 35
+Epoch: 36
+Epoch: 37
+Epoch: 38
+Epoch: 39
+Epoch: 40
+Epoch: 41
+Epoch: 42
+Epoch: 43
+Epoch: 44
+Epoch: 45
+Epoch: 46
+Epoch: 47
+Epoch: 48
+Epoch: 49
+Epoch: 50
